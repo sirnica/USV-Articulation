@@ -13,6 +13,10 @@ import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { School, GraduationCap, CheckCircle, ArrowRight, Calculator } from "lucide-react";
+import { mockTRPC } from "@/lib/mockData";
+
+// Replace trpc with mockTRPC
+const trpc = mockTRPC;
 
 export default function TransferEstimator() {
   const [selectedCC, setSelectedCC] = useState<number | null>(null);

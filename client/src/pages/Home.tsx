@@ -12,6 +12,10 @@ import {
 } from "lucide-react";
 import { Link } from "wouter";
 import { getLoginUrl } from "@/const";
+import { mockTRPC } from "@/lib/mockData";
+
+// Replace trpc with mockTRPC
+const trpc = mockTRPC;
 
 export default function Home() {
   const { user, isAuthenticated } = useAuth();

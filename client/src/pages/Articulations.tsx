@@ -7,6 +7,10 @@ import { trpc } from "@/lib/trpc";
 import { ArrowRight, BookOpen, GraduationCap, Home } from "lucide-react";
 import { useState } from "react";
 import { Link } from "wouter";
+import { mockTRPC } from "@/lib/mockData";
+
+// Replace trpc with mockTRPC
+const trpc = mockTRPC;
 
 export default function Articulations() {
   const [selectedCollege, setSelectedCollege] = useState<number | undefined>();
